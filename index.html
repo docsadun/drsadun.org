@@ -137,11 +137,7 @@ section{padding:clamp(72px,10vw,120px) 0}
 .film .kicker{color:var(--sky)}
 .film .head p{color:rgba(255,255,255,.75)}
 .player{position:relative;margin-top:48px;border-radius:24px 24px 0 0;overflow:hidden;aspect-ratio:16/9;background:#000}
-.player video{width:100%;height:100%;object-fit:cover}
-.player button{position:absolute;inset:0;margin:auto;width:92px;height:92px;border-radius:50%;border:0;background:rgba(255,255,255,.95);color:var(--navy);cursor:pointer;display:grid;place-items:center;box-shadow:0 20px 50px rgba(0,0,0,.4);transition:transform .2s}
-.player button:hover{transform:scale(1.06)}
-.player button svg{width:34px;height:34px;margin-left:5px}
-.player.playing button{display:none}
+.player img{width:100%;height:100%;object-fit:cover}
 
 /* Trayectoria */
 .career .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(40px,6vw,90px)}
@@ -311,7 +307,7 @@ footer .social svg{width:18px;height:18px}
     <div class="reveal">
       <span class="kicker">Sobre mí</span>
       <h2>Tratar la lesión y devolverle el movimiento a cada paciente</h2>
-      <p class="lead">Soy médico por la Universidad Católica de Santiago de Guayaquil y especialista en Traumatología y Ortopedia, formado en el Hadassah Hebrew University Hospital de Jerusalén, Israel.</p>
+      <p class="lead">Soy especialista en Traumatología y Ortopedia, formado en el Hadassah Hebrew University Hospital de Jerusalén, Israel, y médico graduado en la Universidad Católica de Santiago de Guayaquil.</p>
       <p>Antes de mi especialización, realicé mi internado en el Jackson Memorial Hospital a través del William J. Harrington Latin American Training Program. Posteriormente, me desempeñé como director de investigación en la División de Cirugía de Artritis del Dr. Carlos Lavernia donde trabajé en la publicación de artículos y trabajos científicos tanto para diferentes Journals como para presentaciones en Congresos.</p>
       <p>Desde 2006 ejerzo la práctica quirúrgica en Guayaquil y Samborondón. Desde agosto de 2021, soy jefe del Servicio de Traumatología y Ortopedia de UEESCLINIC.</p>
       <p>Mi práctica se centra en la cirugía de rodilla, con especial dedicación al tratamiento de lesiones del ligamento cruzado anterior, meniscos y cartílago mediante técnicas artroscópicas. También atiendo patologías del hombro, fracturas y lesiones deportivas.</p>
@@ -386,12 +382,7 @@ footer .social svg{width:18px;height:18px}
       </div>
       <p>Un equipo quirúrgico coordinado, instrumental especializado y protocolos de seguridad del paciente en cada procedimiento.</p>
     </div>
-    <div class="player reveal" id="player">
-      <video id="filmVideo" preload="none" poster="assets/video-poster.jpg" playsinline controls>
-        <source src="assets/quirofano.mp4" type="video/mp4">
-      </video>
-      <button id="playBtn" aria-label="Reproducir video"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 4.5v15l12-7.5z"/></svg></button>
-    </div>
+    <figure class="player reveal"><img src="assets/quirofano-5.jpg" alt="El Dr. Sadun operando con su equipo en el quirófano de UEESCLINIC" loading="lazy"></figure>
   </div>
 </section>
 
@@ -477,7 +468,7 @@ footer .social svg{width:18px;height:18px}
       <figure class="tall reveal"><img src="assets/quirofano-1.jpg" alt="El Dr. Sadun durante una cirugía" loading="lazy"></figure>
       <figure class="wide reveal"><img src="assets/quirofano-4.jpg" alt="Equipo quirúrgico en UEESCLINIC" loading="lazy"></figure>
       <figure class="tall reveal"><img src="assets/quirofano-2.jpg" alt="Procedimiento ortopédico" loading="lazy"></figure>
-      <figure class="reveal"><img src="assets/quirofano-5.jpg" alt="Cirugía ortopédica" loading="lazy"></figure>
+      <figure class="reveal"><img src="assets/quirofano-3.jpg" alt="Cirugía ortopédica" loading="lazy"></figure>
       <figure class="reveal"><img src="assets/quirofano-6.jpg" alt="Preparación del paciente en quirófano" loading="lazy"></figure>
     </div>
   </div>
@@ -581,11 +572,6 @@ footer .social svg{width:18px;height:18px}
   var hv=document.getElementById('heroVideo');
   if(window.matchMedia('(prefers-reduced-motion: reduce)').matches){hv.removeAttribute('autoplay');try{hv.pause()}catch(e){}}
 
-  var player=document.getElementById('player'),fv=document.getElementById('filmVideo');
-  document.getElementById('playBtn').addEventListener('click',function(){
-    player.classList.add('playing');fv.muted=false;
-    var p=fv.play();if(p&&p.catch)p.catch(function(){fv.muted=true;fv.play().catch(function(){})});
-  });
 
   var io='IntersectionObserver' in window?new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12}):null;
   document.querySelectorAll('.reveal').forEach(function(el){io?io.observe(el):el.classList.add('in')});
