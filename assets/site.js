@@ -22,21 +22,27 @@
     });
   });
 
-  var lb=document.getElementById('lightbox'),lbi=lb.querySelector('img');
-  document.querySelectorAll('.gallery figure img').forEach(function(img){
-    img.parentNode.addEventListener('click',function(){lbi.src=img.src;lbi.alt=img.alt;lb.classList.add('on')});
-  });
-  lb.addEventListener('click',function(){lb.classList.remove('on')});
-  document.addEventListener('keydown',function(e){if(e.key==='Escape')lb.classList.remove('on')});
+  var lb=document.getElementById('lightbox');
+  if(lb){
+    var lbi=lb.querySelector('img');
+    document.querySelectorAll('.gallery figure img').forEach(function(img){
+      img.parentNode.addEventListener('click',function(){lbi.src=img.src;lbi.alt=img.alt;lb.classList.add('on')});
+    });
+    lb.addEventListener('click',function(){lb.classList.remove('on')});
+    document.addEventListener('keydown',function(e){if(e.key==='Escape')lb.classList.remove('on')});
+  }
 
-  document.getElementById('form').addEventListener('submit',function(e){
-    e.preventDefault();
-    var n=document.getElementById('f-name').value.trim(),m=document.getElementById('f-motivo').value,t=document.getElementById('f-msg').value.trim();
-    var txt=EN
-      ? 'Hello Dr. Sadun, my name is '+n+'. I would like to book an appointment. Reason: '+m+'.'+(t?' '+t:'')
-      : 'Hola Dr. Sadun, soy '+n+'. Quisiera agendar una cita. Motivo: '+m+'.'+(t?' '+t:'');
-    var a=document.createElement('a');a.href='https://wa.me/593980784857?text='+encodeURIComponent(txt);a.target='_blank';a.rel='noopener';document.body.appendChild(a);a.click();a.remove();
-  });
+  var form=document.getElementById('form');
+  if(form){
+    form.addEventListener('submit',function(e){
+      e.preventDefault();
+      var n=document.getElementById('f-name').value.trim(),m=document.getElementById('f-motivo').value,t=document.getElementById('f-msg').value.trim();
+      var txt=EN
+        ? 'Hello Dr. Sadun, my name is '+n+'. I would like to book an appointment. Reason: '+m+'.'+(t?' '+t:'')
+        : 'Hola Dr. Sadun, soy '+n+'. Quisiera agendar una cita. Motivo: '+m+'.'+(t?' '+t:'');
+      var a=document.createElement('a');a.href='https://wa.me/593980784857?text='+encodeURIComponent(txt);a.target='_blank';a.rel='noopener';document.body.appendChild(a);a.click();a.remove();
+    });
+  }
 
   try{localStorage.setItem('lang',EN?'en':'es')}catch(e){}
   document.getElementById('yr').textContent=new Date().getFullYear();
