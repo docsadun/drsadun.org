@@ -15,9 +15,25 @@
   <url>
     <loc>https://drsadun.org/artroscopia-de-rodilla/</loc>
     <lastmod>2026-11-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://drsadun.org/artroscopia-de-rodilla/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drsadun.org/en/knee-arthroscopy/"/>
+  </url>
+  <url>
+    <loc>https://drsadun.org/en/knee-arthroscopy/</loc>
+    <lastmod>2026-11-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://drsadun.org/artroscopia-de-rodilla/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drsadun.org/en/knee-arthroscopy/"/>
   </url>
   <url>
     <loc>https://drsadun.org/traumatologo-samborondon/</loc>
     <lastmod>2026-11-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://drsadun.org/traumatologo-samborondon/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drsadun.org/en/orthopedic-surgeon-samborondon/"/>
+  </url>
+  <url>
+    <loc>https://drsadun.org/en/orthopedic-surgeon-samborondon/</loc>
+    <lastmod>2026-11-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://drsadun.org/traumatologo-samborondon/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drsadun.org/en/orthopedic-surgeon-samborondon/"/>
   </url>
 </urlset>
