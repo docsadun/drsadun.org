@@ -2,38 +2,50 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://drsadun.org/</loc>
-    <lastmod>2026-11-09</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <xhtml:link rel="alternate" hreflang="es" href="https://drsadun.org/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://drsadun.org/en/"/>
   </url>
   <url>
     <loc>https://drsadun.org/en/</loc>
-    <lastmod>2026-11-09</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <xhtml:link rel="alternate" hreflang="es" href="https://drsadun.org/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://drsadun.org/en/"/>
   </url>
   <url>
     <loc>https://drsadun.org/artroscopia-de-rodilla/</loc>
-    <lastmod>2026-11-09</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <xhtml:link rel="alternate" hreflang="es" href="https://drsadun.org/artroscopia-de-rodilla/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://drsadun.org/en/knee-arthroscopy/"/>
   </url>
   <url>
     <loc>https://drsadun.org/en/knee-arthroscopy/</loc>
-    <lastmod>2026-11-09</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <xhtml:link rel="alternate" hreflang="es" href="https://drsadun.org/artroscopia-de-rodilla/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://drsadun.org/en/knee-arthroscopy/"/>
   </url>
   <url>
     <loc>https://drsadun.org/traumatologo-samborondon/</loc>
-    <lastmod>2026-11-09</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <xhtml:link rel="alternate" hreflang="es" href="https://drsadun.org/traumatologo-samborondon/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://drsadun.org/en/orthopedic-surgeon-samborondon/"/>
   </url>
   <url>
     <loc>https://drsadun.org/en/orthopedic-surgeon-samborondon/</loc>
-    <lastmod>2026-11-09</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <xhtml:link rel="alternate" hreflang="es" href="https://drsadun.org/traumatologo-samborondon/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://drsadun.org/en/orthopedic-surgeon-samborondon/"/>
+  </url>
+  <url>
+    <loc>https://drsadun.org/privacidad/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://drsadun.org/privacidad/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drsadun.org/en/privacy/"/>
+  </url>
+  <url>
+    <loc>https://drsadun.org/en/privacy/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://drsadun.org/privacidad/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drsadun.org/en/privacy/"/>
   </url>
 </urlset>
