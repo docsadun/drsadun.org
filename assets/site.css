@@ -261,3 +261,5 @@ footer .social svg{width:18px;height:18px}
 footer a.home{color:#fff;font-weight:700;text-decoration:none}
 footer a.home:hover{text-decoration:underline}
 @media (max-width:760px){.page-hero{padding-top:148px}}
+summary{overflow-wrap:anywhere;hyphens:auto}
+summary::after{flex:none}
