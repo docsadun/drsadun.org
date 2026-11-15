@@ -96,4 +96,40 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://drsadun.org/privacidad/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://drsadun.org/en/privacy/"/>
   </url>
+  <url>
+    <loc>https://drsadun.org/ligamento-cruzado-anterior/</loc>
+    <lastmod>2026-11-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://drsadun.org/ligamento-cruzado-anterior/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drsadun.org/en/acl-tear/"/>
+  </url>
+  <url>
+    <loc>https://drsadun.org/en/acl-tear/</loc>
+    <lastmod>2026-11-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://drsadun.org/ligamento-cruzado-anterior/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drsadun.org/en/acl-tear/"/>
+  </url>
+  <url>
+    <loc>https://drsadun.org/menisco/</loc>
+    <lastmod>2026-11-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://drsadun.org/menisco/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drsadun.org/en/meniscus-tear/"/>
+  </url>
+  <url>
+    <loc>https://drsadun.org/en/meniscus-tear/</loc>
+    <lastmod>2026-11-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://drsadun.org/menisco/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drsadun.org/en/meniscus-tear/"/>
+  </url>
+  <url>
+    <loc>https://drsadun.org/antes-y-despues-de-la-cirugia/</loc>
+    <lastmod>2026-11-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://drsadun.org/antes-y-despues-de-la-cirugia/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drsadun.org/en/before-and-after-surgery/"/>
+  </url>
+  <url>
+    <loc>https://drsadun.org/en/before-and-after-surgery/</loc>
+    <lastmod>2026-11-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://drsadun.org/antes-y-despues-de-la-cirugia/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drsadun.org/en/before-and-after-surgery/"/>
+  </url>
 </urlset>
