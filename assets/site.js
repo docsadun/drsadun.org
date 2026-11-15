@@ -9,15 +9,16 @@
   menu.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){menu.classList.remove('open')})});
 
   var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var hv=document.getElementById('heroVideo');
+  if(hv&&reduce){hv.removeAttribute('autoplay');try{hv.pause()}catch(e){}}
   function armVideo(v){
-    if(!v||reduce||v.getAttribute('data-armed'))return;
+    if(!v||v.getAttribute('data-armed'))return;
     var src=v.getAttribute('data-src');
     if(!src)return;
     v.setAttribute('data-armed','1');
     var s=document.createElement('source');
     s.src=src;s.type='video/mp4';
     v.appendChild(s);
-    v.addEventListener('playing',function(){v.classList.add('is-playing')});
     var p=v.play();
     if(p&&p.catch)p.catch(function(){});
   }

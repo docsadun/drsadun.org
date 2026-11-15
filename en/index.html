@@ -106,7 +106,9 @@
 
 <header class="hero" id="home">
   <img class="poster" src="../assets/video-poster.jpg" alt="Operating room at UEESCLINIC during orthopedic surgery" width="1280" height="720">
-  <video id="heroVideo" muted loop playsinline preload="none" poster="../assets/video-poster.jpg" data-src="../assets/quirofano.mp4" aria-hidden="true"></video>
+  <video id="heroVideo" autoplay muted loop playsinline preload="metadata" poster="../assets/video-poster.jpg" aria-hidden="true">
+    <source src="../assets/quirofano.mp4" type="video/mp4">
+  </video>
   <div class="wrap">
     <div>
       <span class="kicker">Orthopedic Surgeon · Samborondón, Ecuador</span>
