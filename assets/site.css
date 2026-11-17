@@ -263,3 +263,6 @@ footer a.home:hover{text-decoration:underline}
 @media (max-width:760px){.page-hero{padding-top:148px}}
 summary{overflow-wrap:anywhere;hyphens:auto}
 summary::after{flex:none}
+
+.card.feature li a{color:inherit;text-decoration:underline;text-decoration-color:rgba(255,255,255,.4);text-underline-offset:3px}
+.card.feature li a:hover{color:var(--sky);text-decoration-color:currentColor}
