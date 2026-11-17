@@ -266,3 +266,5 @@ summary::after{flex:none}
 
 .card.feature li a{color:inherit;text-decoration:underline;text-decoration-color:rgba(255,255,255,.4);text-underline-offset:3px}
 .card.feature li a:hover{color:var(--sky);text-decoration-color:currentColor}
+.card.wide{grid-column:span 2}
+@media (max-width:760px){.card.wide{grid-column:auto}}
