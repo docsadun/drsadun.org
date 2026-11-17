@@ -144,4 +144,28 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://drsadun.org/sinovitis-y-plica-sinovial/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://drsadun.org/en/synovitis-and-plica/"/>
   </url>
+  <url>
+    <loc>https://drsadun.org/dolor-de-espalda/</loc>
+    <lastmod>2026-11-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://drsadun.org/dolor-de-espalda/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drsadun.org/en/back-pain/"/>
+  </url>
+  <url>
+    <loc>https://drsadun.org/en/back-pain/</loc>
+    <lastmod>2026-11-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://drsadun.org/dolor-de-espalda/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drsadun.org/en/back-pain/"/>
+  </url>
+  <url>
+    <loc>https://drsadun.org/artrosis-y-osteoporosis/</loc>
+    <lastmod>2026-11-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://drsadun.org/artrosis-y-osteoporosis/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drsadun.org/en/osteoarthritis-and-osteoporosis/"/>
+  </url>
+  <url>
+    <loc>https://drsadun.org/en/osteoarthritis-and-osteoporosis/</loc>
+    <lastmod>2026-11-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://drsadun.org/artrosis-y-osteoporosis/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drsadun.org/en/osteoarthritis-and-osteoporosis/"/>
+  </url>
 </urlset>
