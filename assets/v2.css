@@ -204,8 +204,8 @@ h2{font-stretch:72%;font-weight:760;font-size:clamp(2.1rem,4.6vw,3.4rem);letter-
 /* sobre mí */
 .about{padding:clamp(72px,10vw,128px) 0}
 .about-in{display:grid;grid-template-columns:minmax(0,420px) minmax(0,1fr);gap:clamp(32px,7vw,96px);align-items:start}
-.portrait{position:relative;background:var(--scrub);border-radius:10px;overflow:hidden;aspect-ratio:578/672}
-.portrait img{position:absolute;inset:auto 0 0 0;width:100%;height:auto}
+.portrait{background:var(--scrub);border-radius:10px;overflow:hidden;aspect-ratio:1/1}
+.portrait img{width:100%;height:100%;object-fit:cover}
 .role{margin-top:10px;color:var(--steel);font-size:1.0625rem}
 .prose{margin-top:28px;font-family:var(--serif);font-size:1.1563rem;line-height:1.7;max-width:62ch}
 .prose p+p{margin-top:1em}
