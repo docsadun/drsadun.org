@@ -50,8 +50,8 @@
       e.preventDefault();
       var n=document.getElementById('f-name').value.trim(),m=document.getElementById('f-motivo').value,t=document.getElementById('f-msg').value.trim();
       var txt=EN
-        ? 'Hello Dr. Sadun, my name is '+n+'. I would like to book an appointment. Reason: '+m+'.'+(t?' '+t:'')
-        : 'Hola Dr. Sadun, soy '+n+'. Quisiera agendar una cita. Motivo: '+m+'.'+(t?' '+t:'');
+        ? 'Hello Dr. Sadun, my name is '+n+'. I would like to request an appointment. Reason: '+m+'.'+(t?' '+t:'')+' (Writing from drsadun.org)'
+        : 'Hola Dr. Sadun, soy '+n+'. Quisiera solicitar una cita. Motivo: '+m+'.'+(t?' '+t:'')+' (Escribo desde drsadun.org)';
       var a=document.createElement('a');a.href='https://wa.me/593980784857?text='+encodeURIComponent(txt);a.target='_blank';a.rel='noopener';document.body.appendChild(a);a.click();a.remove();
     });
   }

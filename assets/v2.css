@@ -67,7 +67,7 @@ h2{font-stretch:72%;font-weight:760;font-size:clamp(2.1rem,4.6vw,3.4rem);letter-
 .urgent{display:flex;align-items:center;justify-content:center;gap:10px;min-height:40px;padding:8px var(--pad);background:var(--urgent);color:#fff;font-weight:620;font-size:.9375rem;line-height:1.3;text-align:center;text-decoration:none}
 .pulse{flex:none;width:8px;height:8px;border-radius:50%;background:#fff;animation:pulse 2s ease-in-out infinite}
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
-@media (hover:hover) and (pointer:fine){.urgent:hover span:last-child{text-decoration:underline;text-underline-offset:3px}}
+.urgent a{color:#fff;font-weight:750;text-decoration:underline;text-decoration-thickness:1.5px;text-underline-offset:3px;white-space:nowrap}
 
 /* navegación */
 .nav{position:sticky;top:0;z-index:40;background:var(--ink);color:#fff;border-bottom:1px solid rgba(255,255,255,.08)}
@@ -110,6 +110,8 @@ h2{font-stretch:72%;font-weight:760;font-size:clamp(2.1rem,4.6vw,3.4rem);letter-
 .hero-who{margin-top:14px;font-size:1.0625rem;color:rgba(255,255,255,.72)}
 .hero-p{margin-top:28px;font-family:var(--serif);font-size:1.1875rem;line-height:1.6;color:rgba(255,255,255,.88);max-width:44ch}
 .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:36px}
+.hero-where{margin-top:22px;font-size:.9688rem;line-height:1.55;color:rgba(255,255,255,.8)}
+.hero-where a{color:#fff;font-weight:650;text-underline-offset:3px}
 .rating{display:inline-flex;align-items:center;gap:10px;margin-top:22px;color:rgba(255,255,255,.88);font-size:.9688rem;text-decoration:none}
 .rating .stars{color:#FBBC04;letter-spacing:2px;font-size:1.0625rem}
 .rating b{color:#fff}
@@ -290,6 +292,7 @@ h2{font-stretch:72%;font-weight:760;font-size:clamp(2.1rem,4.6vw,3.4rem);letter-
 .contact .lead{margin-top:14px;font-family:var(--serif);font-size:1.1875rem;color:rgba(255,255,255,.82);max-width:40ch}
 .emerg-card{display:flex;flex-direction:column;gap:2px;margin-top:28px;padding:18px 20px;border-radius:8px;background:var(--urgent);color:#fff;text-decoration:none}
 .emerg-card b{font-size:1.125rem}
+.emerg-card a{color:#fff;font-weight:700;text-decoration:underline;text-underline-offset:3px;white-space:nowrap}
 .facts{margin:24px 0 0}
 .facts>div{display:grid;grid-template-columns:120px 1fr;gap:16px;padding:14px 0;border-top:1px solid rgba(255,255,255,.14)}
 .facts dt{color:rgba(255,255,255,.62);font-size:.9375rem}
@@ -351,6 +354,13 @@ h2{font-stretch:72%;font-weight:760;font-size:clamp(2.1rem,4.6vw,3.4rem);letter-
 .prose li+li{margin-top:.45em}
 .prose a{color:var(--scrub);text-underline-offset:3px}
 .prose a[href*="wa.me"]{color:#075E54;font-weight:700;text-decoration-color:var(--wa);text-decoration-thickness:2px}
+.prose .lead-box{border-left:3px solid var(--scrub);padding-left:clamp(16px,2.4vw,24px)}
+.prose .lead-box p{font-size:1.1875rem}
+.prose .toc{list-style:none;padding:0;margin:18px 0 0;display:flex;flex-wrap:wrap;gap:8px}
+.prose .toc li{margin:0;font-family:var(--sans);font-size:.9688rem}
+.prose .toc a{display:inline-flex;align-items:center;min-height:40px;padding:0 14px;border-radius:999px;background:var(--ice);color:var(--ink);font-weight:620;text-decoration:none}
+@media (hover:hover) and (pointer:fine){.prose .toc a:hover{background:#D5E2F2}}
+.prose a[href^="tel:"]{color:var(--urgent);font-weight:700;white-space:nowrap}
 .prose section#contacto,.prose section#contact{background:var(--ice);border-radius:10px;padding:clamp(22px,3vw,36px)}
 .prose .also{display:flex;flex-wrap:wrap;gap:10px;margin:44px 0 0;padding:0;list-style:none}
 .prose .also li{margin:0;font-family:var(--sans);font-size:.9688rem}
