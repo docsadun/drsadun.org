@@ -349,7 +349,6 @@ h2{font-stretch:72%;font-weight:760;font-size:clamp(2.1rem,4.6vw,3.4rem);letter-
 .emerg-card .emerg-a{width:100%;margin:12px 0 6px}
 .emerg-card .ubtn{min-height:48px;font-size:1rem;white-space:normal;text-align:center;padding-top:8px;padding-bottom:8px}
 .emerg-card .ubtn:first-child{flex:1 1 auto}
-.emerg-card .ubtn:last-child{flex:none;min-width:64px}
 .emerg-card small{font-size:.9375rem}
 .nw{white-space:nowrap}
 @media (max-width:600px){.emerg-card .nw{display:block;white-space:normal}}
