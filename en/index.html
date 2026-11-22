@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="referrer" content="strict-origin-when-cross-origin">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-qIN9qsUNnTab6cxiA5DVFU9BORGz8K8L2DfHjTywQKs='; style-src 'self'; img-src 'self'; font-src 'self'; media-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-src https://www.google.com https://maps.google.com; worker-src 'none'; upgrade-insecure-requests">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-P2tEtphkirelpNTIQfaGguTgh1at1eY9Z8wooyBRkBA='; style-src 'self'; img-src 'self'; font-src 'self'; media-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-src https://www.google.com https://maps.google.com; worker-src 'none'; upgrade-insecure-requests">
 <title>Dr. Alberto Sadun | Orthopedic Surgeon in Samborondón, Ecuador</title>
 <meta name="description" content="Dr. Alberto Sadun in Samborondón, Head of the Department of Orthopedics at UEESCLINIC. Knee arthroscopy, fractures, hip and sports injuries.">
 <meta name="google-site-verification" content="WNUcHA0uf7JanJKuZ6T_eiTKeMT0MrZZOUh8kiWi_NQ" />
@@ -43,7 +43,7 @@
   "image": "https://drsadun.org/assets/retrato.webp",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "Avenida Diana Quintana #100 and Calle Verona, kilometer 2.5 on the road to Samborondón, UEESCLINIC, third floor, office 12",
+    "streetAddress": "UEESCLINIC, Avenida Diana Quintana #100 and Calle Verona, kilometer 2.5 on the road to Samborondón, third floor, office 12",
     "addressLocality": "Samborondón",
     "addressRegion": "Guayas",
     "addressCountry": "EC"
@@ -75,7 +75,7 @@
 }
 </script>
 <link rel="preload" href="../assets/fonts/archivo-latin-wdth.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="../assets/v2.css?v=20261121j">
+<link rel="stylesheet" href="../assets/v2.css?v=20261122c">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -102,12 +102,12 @@
 
 <header class="hero" id="home">
   <div class="hero-photo">
-    <video src="../assets/hero-quirofano.mp4?v=2" poster="../assets/quirofano-7.jpg" autoplay muted loop playsinline preload="auto" width="720" height="1280" aria-label="Dr. Alberto Sadun operating at UEESCLINIC"></video>
+    <video class="lazy-v" data-src="../assets/hero-quirofano.mp4?v=2" poster="../assets/quirofano-7.jpg" muted loop playsinline preload="none" width="720" height="1280" aria-label="Dr. Alberto Sadun operating at UEESCLINIC"></video>
   </div>
   <div class="wrap hero-in">
     <h1 class="hero-h"><span class="hero-name">Dr. Alberto Sadun</span> <span class="hero-spec">Orthopedic Surgery</span> <span class="hero-place">UEESCLINIC, Samborondón, Ecuador</span></h1>
     <p class="hero-who">Head of the Department of Orthopedics at UEESCLINIC</p>
-    <p class="hero-p">I treat knee, shoulder and hip injuries, fractures and sports injuries. We will do a physical exam, order any additional tests you need, and explain your diagnosis and treatment.</p>
+    <p class="hero-p">I treat knee, shoulder and hip injuries, fractures and sports injuries. At your visit I examine you, order the tests you need and explain your diagnosis and treatment.</p>
     <div class="actions">
       <a class="btn btn-wa" href="https://wa.me/593980784857?text=Hello%20Dr.%20Sadun%2C%20I%20would%20like%20to%20request%20an%20appointment.%20(Writing%20from%20drsadun.org)" target="_blank" rel="noopener">
         <svg class="wa" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1 2.7c.1.2 1.8 2.8 4.4 3.9 1.6.7 2.3.8 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></svg>
@@ -115,19 +115,11 @@
       </a>
       <a class="btn btn-quiet" href="#services">See what we treat</a>
     </div>
-    <p class="hero-where">UEESCLINIC<br>Avenida Diana Quintana #100 and Calle Verona, kilometer 2.5 on the road to Samborondón<br>3rd floor, office 12.<br>Monday to Friday, 7:00 am to 6:00 pm. <a href="https://maps.google.com/?cid=14033466174226242022" target="_blank" rel="noopener">Directions</a></p>
+    <p class="hero-where">UEESCLINIC, third floor, office 12.<br><a href="https://maps.google.com/?cid=14033466174226242022" target="_blank" rel="noopener">Directions</a></p>
   </div>
 </header>
 
 <main id="main">
-
-<section class="creds" aria-label="Training and position">
-  <div class="wrap creds-in">
-    <div><b>Orthopedic Surgery Residency</b><span>Hadassah Hebrew University Hospital, Jerusalem</span></div>
-    <div><b>Orthopedic surgeon since 2006</b><span>Guayaquil and Samborondón</span></div>
-    <div><b>Adjunct Faculty</b><span>William J. Harrington Training Program</span></div>
-  </div>
-</section>
 
 <section class="index" id="services">
   <div class="wrap">
@@ -139,7 +131,7 @@
       <li class="zone zone-knee">
         <a class="zone-name" href="/en/knee-arthroscopy/"><svg class="zone-art" viewBox="0 0 64 64" aria-hidden="true"><path class="b" d="M25 1V16C25 20 18 22 16 27C14.5 31 18 35.5 23 35C27 34.5 29 31.5 32 31.5C35 31.5 37 34.5 41 35C46 35.5 49.5 31 48 27C46 22 39 20 39 16V1"/><path class="b" d="M15 41C15 38.5 19 38 23 38.5C27 39 29.5 40 32 40C34.5 40 37 39 41 38.5C45 38 49 38.5 49 41C49 45 44 47.5 40 49V63H24V49C20 47.5 15 45 15 41Z"/><path class="b" d="M45 47.5C47.5 46 51 46.5 51 49C51 50.5 50 51 49.5 52V63H46V52C45 51 44 49 45 47.5Z"/><ellipse class="b" cx="32" cy="27" rx="5.5" ry="6.5"/></svg><span>Knee</span></a>
         <div class="zone-d">
-          <p>Arthroscopy for the anterior cruciate ligament, meniscus, synovitis and synovial plica.</p>
+          <p>Pain, instability or locking from anterior cruciate ligament, meniscus, synovitis or synovial plica injuries.</p>
           <ul class="zone-links">
             <li><a href="/en/knee-arthroscopy/#anterior-cruciate-ligament">Anterior cruciate ligament tear</a></li>
             <li><a href="/en/knee-arthroscopy/#meniscus">Meniscus tear</a></li>
@@ -184,7 +176,7 @@
       <p>From your first message to discharge, with the same doctor at every step.</p>
     </div>
     <ol class="steps">
-      <li><h3>Message us on WhatsApp</h3><p>We book your visit at office 12, UEESCLINIC, Monday to Friday, 7:00 am to 6:00 pm.</p></li>
+      <li><h3>Message us on WhatsApp</h3><p>We book your visit. If you have just been injured, we will gladly see you 24 hours a day, every day of the year.</p></li>
       <li><h3>Visit and exam</h3><p>We review your tests and I examine you. If needed, we order an X-ray, ultrasound or MRI.</p></li>
       <li><h3>Diagnosis and plan</h3><p>I explain what you have and what the options are. Many injuries get better without surgery.</p></li>
       <li><h3>Treatment</h3><p>Physical therapy, medication, a cast or surgery in the UEESCLINIC operating room, depending on your case.</p></li>
@@ -323,15 +315,7 @@
       </details>
       <details>
         <summary>What should I bring to my appointment?</summary>
-        <p>Your ID or passport, any tests you have (X-rays, MRIs, ultrasounds and their reports) and a list of the medicines you take. If you have insurance, bring your policy details: we fill out the forms for your reimbursement.</p>
-      </details>
-      <details>
-        <summary>What is arthroscopy?</summary>
-        <p>It is surgery done through two or three small incisions, using a camera to see inside the joint and repair the meniscus, ligaments or cartilage. Patients usually go home the same day or the next.</p>
-      </details>
-      <details>
-        <summary>How do I book an appointment?</summary>
-        <p>Message us on WhatsApp at +593 98 078 4857 or use the form on this page. Office hours are Monday to Friday, 7:00 am to 6:00 pm, at UEESCLINIC.</p>
+        <p>Your ID or passport, any tests you have (X-rays, MRIs, ultrasounds and their reports) and a list of the medicines you take. If you have insurance, your policy details too.</p>
       </details>
     </div>
   </div>
@@ -340,15 +324,16 @@
 <section class="contact" id="contact">
   <div class="wrap contact-in">
     <div class="clinic">
-      <h2>Book your appointment</h2>
+      <h2>Contact</h2>
       <p class="lead">UEESCLINIC Teaching Hospital, on the UEES campus in Samborondón, Ecuador.</p>
       <dl class="facts">
-        <div><dt>WhatsApp</dt><dd><a class="wa-link" href="https://wa.me/593980784857?text=Hello%20Dr.%20Sadun.%20(Writing%20from%20drsadun.org)" target="_blank" rel="noopener"><svg class="wa" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1 2.7c.1.2 1.8 2.8 4.4 3.9 1.6.7 2.3.8 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></svg>+593 98 078 4857</a></dd></div>
-        <div><dt>Email</dt><dd><a href="mailto:docsadun@gmail.com">docsadun@gmail.com</a></dd></div>
-        <div><dt>Office</dt><dd><a href="https://maps.google.com/?cid=14033466174226242022" target="_blank" rel="noopener">Avenida Diana Quintana #100 and Calle Verona, kilometer 2.5 on the road to Samborondón. UEESCLINIC, third floor, office 12</a></dd></div>
-        <div><dt>Hours</dt><dd>Monday to Friday, 7:00 am to 6:00 pm</dd></div>
+        <div><dt><svg class="fi fi-wa" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1 2.7c.1.2 1.8 2.8 4.4 3.9 1.6.7 2.3.8 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></svg>WhatsApp</dt><dd><a class="wa-link" href="https://wa.me/593980784857?text=Hello%20Dr.%20Sadun.%20(Writing%20from%20drsadun.org)" target="_blank" rel="noopener">+593 98 078 4857</a></dd></div>
+        <div><dt><svg class="fi fi-mail" viewBox="0 0 52 40" aria-hidden="true"><path fill="#4285F4" d="M3.5 40h8V20.5L0 11.75V36.5C0 38.43 1.57 40 3.5 40z"/><path fill="#34A853" d="M40.5 40h8c1.93 0 3.5-1.57 3.5-3.5V11.75L40.5 20.5z"/><path fill="#FBBC04" d="M40.5 5.25V20.5L52 11.75v-4.5c0-4.33-4.94-6.8-8.4-4.2z"/><path fill="#EA4335" d="M11.5 20.5V5.25L26 16.13 40.5 5.25V20.5L26 31.38z"/><path fill="#C5221F" d="M0 7.25v4.5l11.5 8.75V5.25L8.4 2.93C4.93.33 0 2.8 0 7.25z"/></svg>Email</dt><dd><a href="mailto:docsadun@gmail.com">docsadun@gmail.com</a></dd></div>
+        <div><dt><svg class="fi fi-pin" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.6A2.6 2.6 0 1 1 12 6.4a2.6 2.6 0 0 1 0 5.2z"/></svg>Address</dt><dd><a href="https://maps.google.com/?cid=14033466174226242022" target="_blank" rel="noopener">UEESCLINIC, Avenida Diana Quintana #100 and Calle Verona, kilometer 2.5 on the road to Samborondón, third floor, office 12</a></dd></div>
+        <div><dt><svg class="fi fi-clock" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm0 2a8 8 0 1 1 0 16 8 8 0 0 1 0-16zm-1 3v5.4l4.3 2.6 1-1.7-3.3-2V7h-2z"/></svg>Hours</dt><dd>Monday to Friday, 7:00 am to 6:00 pm</dd></div>
       </dl>
       <div class="map-frame">
+        <a class="map-alt" href="https://maps.google.com/?cid=14033466174226242022" target="_blank" rel="noopener">Open the map in Google Maps</a>
         <iframe title="Map to office 12 at UEESCLINIC" src="https://maps.google.com/maps?cid=14033466174226242022&amp;hl=en&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
@@ -389,8 +374,6 @@
       <p><b>Dr. Alberto Sadun Rodríguez</b><br>Orthopedic Surgery, Knee Arthroscopy</p>
     </div>
     <ul class="foot-links">
-      <li><a href="/en/knee-arthroscopy/">Knee pain and injuries</a></li>
-      <li><a href="/en/before-and-after-surgery/">Before and after surgery</a></li>
       <li><a href="https://maps.google.com/?cid=14033466174226242022" target="_blank" rel="noopener">Reviews on Google</a></li>
       <li><a href="https://g.page/r/CeYZNwoi48DCEBM/review" target="_blank" rel="noopener">Leave a review</a></li>
       <li><a href="/en/privacy/">Privacy</a></li>
@@ -412,6 +395,6 @@
 
 <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Enlarged photo"><button aria-label="Close">Close</button><img alt="" width="1400" height="852"></div>
 
-<script src="../assets/v2.js?v=20261121j" defer></script>
+<script src="../assets/v2.js?v=20261122c" defer></script>
 </body>
 </html>

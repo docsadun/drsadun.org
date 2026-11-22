@@ -12,8 +12,10 @@
   if(fl){var onS=function(){fl.classList.toggle('show',window.scrollY>window.innerHeight*.8)};onS();window.addEventListener('scroll',onS,{passive:true})}
   var lv=document.querySelectorAll('video.lazy-v');
   var red=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  /* con ahorro de datos o conexión lenta se queda la foto; el video carga solo si la persona lo pide */
+  var nc=navigator.connection,lite=!!(nc&&(nc.saveData||/2g|3g/.test(nc.effectiveType||'')));
   function wake(v){if(v.dataset.src){v.src=v.dataset.src;v.removeAttribute('data-src');if(red){v.controls=true}else{var p=v.play();if(p&&p.catch)p.catch(function(){})}}}
-  if('IntersectionObserver' in window){var vo=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){wake(e.target);vo.unobserve(e.target)}})},{rootMargin:'200px'});lv.forEach(function(v){vo.observe(v)})}else{lv.forEach(wake)}
+  if(lite||red){}else if('IntersectionObserver' in window){var vo=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){wake(e.target);vo.unobserve(e.target)}})},{rootMargin:'200px'});lv.forEach(function(v){vo.observe(v)})}else{lv.forEach(wake)}
   var PAUSE='<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M7 5h3.5v14H7zM13.5 5H17v14h-3.5z"/></svg>';
   var PLAY='<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M8 5.5v13l11-6.5z"/></svg>';
   document.querySelectorAll('video[autoplay],video.lazy-v').forEach(function(v){
@@ -46,6 +48,11 @@
   }
   var form=document.getElementById('form');
   if(form){
+    var MSG={'f-name':EN?'Please write your full name.':'Escriba su nombre completo.','f-motivo':EN?'Please choose the reason for your visit.':'Elija el motivo de consulta.'};
+    Object.keys(MSG).forEach(function(id){var el=document.getElementById(id);if(!el)return;
+      el.addEventListener('invalid',function(){el.setCustomValidity(MSG[id])});
+      ['input','change'].forEach(function(ev){el.addEventListener(ev,function(){el.setCustomValidity('')})});
+    });
     form.addEventListener('submit',function(e){
       e.preventDefault();
       var n=document.getElementById('f-name').value.trim(),m=document.getElementById('f-motivo').value,t=document.getElementById('f-msg').value.trim();
