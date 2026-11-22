@@ -52,9 +52,23 @@
       var txt=EN
         ? 'Hello Dr. Sadun, my name is '+n+'. I would like to request an appointment. Reason: '+m+'.'+(t?' '+t:'')+' (Writing from drsadun.org)'
         : 'Hola Dr. Sadun, soy '+n+'. Quisiera solicitar una cita. Motivo: '+m+'.'+(t?' '+t:'')+' (Escribo desde drsadun.org)';
-      var a=document.createElement('a');a.href='https://wa.me/593980784857?text='+encodeURIComponent(txt);a.target='_blank';a.rel='noopener';document.body.appendChild(a);a.click();a.remove();
+      var url='https://wa.me/593980784857?text='+encodeURIComponent(txt);
+      var a=document.createElement('a');a.href=url;a.target='_blank';a.rel='noopener';document.body.appendChild(a);a.click();a.remove();
+      var st=document.getElementById('f-sent');
+      if(st){
+        st.textContent='';
+        var l=document.createElement('a');l.href=url;l.target='_blank';l.rel='noopener';l.textContent=EN?'write to us at +593 98 078 4857':'escríbanos al +593 98 078 4857';
+        st.appendChild(document.createTextNode(EN?'WhatsApp opened with your message ready to send. If it did not open, ':'Se abrió WhatsApp con su mensaje listo para enviar. Si no se abrió, '));
+        st.appendChild(l);st.appendChild(document.createTextNode('.'));
+      }
     });
   }
+  function openCv(){
+    var h=location.hash.slice(1);if(!h)return;
+    var t=document.getElementById(h),cv=t&&t.closest('details.cv');
+    if(cv&&!cv.open){cv.open=true;if(t!==cv)t.scrollIntoView()}
+  }
+  openCv();window.addEventListener('hashchange',openCv);
   try{localStorage.setItem('lang',EN?'en':'es')}catch(e){}
   var yr=document.getElementById('yr');if(yr)yr.textContent=new Date().getFullYear();
 })();
