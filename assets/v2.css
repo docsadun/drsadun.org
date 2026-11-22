@@ -246,7 +246,7 @@ h2{font-stretch:72%;font-weight:760;font-size:clamp(2.1rem,4.6vw,3.4rem);letter-
 .steps li::before{content:counter(st);display:block;font-stretch:62%;font-weight:800;font-size:3rem;line-height:1;color:var(--scrub);margin-bottom:16px}
 .steps h3{font-size:1.125rem;font-weight:680;line-height:1.25}
 .steps p{margin-top:8px;font-size:.9688rem;color:var(--steel);line-height:1.55}
-.insure{margin-top:48px;font-family:var(--serif);font-size:1.25rem;line-height:1.5;max-width:52ch}
+.insure{margin-top:36px;font-family:var(--serif);font-size:1.25rem;line-height:1.5;max-width:52ch}
 .guides{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:32px}
 .guide{display:flex;flex-direction:column;gap:6px;padding:24px 26px;background:var(--white);border-radius:8px;text-decoration:none;border:1px solid var(--line);transition:border-color .2s var(--ease)}
 .guide b{font-stretch:76%;font-weight:740;font-size:1.5rem;line-height:1.1}
