@@ -428,6 +428,8 @@ h2{font-stretch:72%;font-weight:760;font-size:clamp(2.1rem,4.6vw,3.4rem);letter-
 .prose li+li{margin-top:.45em}
 .prose a{color:var(--scrub);text-underline-offset:3px}
 .prose a[href*="wa.me"]{color:#075E54;font-weight:700;text-decoration-color:var(--wa);text-decoration-thickness:2px}
+.prose .wa-cta{margin-top:12px}
+.prose a.btn-wa{font-family:var(--sans);color:var(--wa-ink);text-decoration:none;font-variant-numeric:tabular-nums}
 .prose .lead-box{border-left:3px solid var(--scrub);padding-left:clamp(16px,2.4vw,24px)}
 .prose .lead-box p{font-size:1.1875rem}
 .prose .toc{list-style:none;padding:0;margin:18px 0 0;display:flex;flex-wrap:wrap;gap:8px}
