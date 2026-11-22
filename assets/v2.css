@@ -251,6 +251,10 @@ h2{font-stretch:72%;font-weight:760;font-size:clamp(2.1rem,4.6vw,3.4rem);letter-
 .guide{display:flex;flex-direction:column;gap:6px;padding:24px 26px;background:var(--white);border-radius:8px;text-decoration:none;border:1px solid var(--line);transition:border-color .2s var(--ease)}
 .guide b{font-stretch:76%;font-weight:740;font-size:1.5rem;line-height:1.1}
 .guide span{color:var(--steel);font-size:.9688rem}
+.inside-t .guide{margin-top:32px;max-width:30rem;background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.22);color:#fff}
+.inside-t .guide span{color:rgba(255,255,255,.78)}
+@media (hover:hover) and (pointer:fine){.inside-t .guide:hover{border-color:#fff}}
+.guides:has(> .guide:only-child){grid-template-columns:minmax(0,30rem)}
 .guide .guide-place{margin-top:-2px;font-style:normal;font-stretch:88%;font-weight:620;font-size:1.0625rem;color:var(--scrub-d)}
 @media (hover:hover) and (pointer:fine){.guide:hover{border-color:var(--ink)}}
 @media (max-width:980px){
