@@ -132,4 +132,52 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://drsadun.org/osteoporosis/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://drsadun.org/en/osteoporosis/"/>
   </url>
+  <url>
+    <loc>https://drsadun.org/ligamento-cruzado-anterior/</loc>
+    <lastmod>2026-11-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://drsadun.org/ligamento-cruzado-anterior/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drsadun.org/en/acl-tear/"/>
+  </url>
+  <url>
+    <loc>https://drsadun.org/en/acl-tear/</loc>
+    <lastmod>2026-11-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://drsadun.org/ligamento-cruzado-anterior/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drsadun.org/en/acl-tear/"/>
+  </url>
+  <url>
+    <loc>https://drsadun.org/menisco/</loc>
+    <lastmod>2026-11-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://drsadun.org/menisco/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drsadun.org/en/meniscus-tear/"/>
+  </url>
+  <url>
+    <loc>https://drsadun.org/en/meniscus-tear/</loc>
+    <lastmod>2026-11-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://drsadun.org/menisco/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drsadun.org/en/meniscus-tear/"/>
+  </url>
+  <url>
+    <loc>https://drsadun.org/esguince-de-tobillo/</loc>
+    <lastmod>2026-11-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://drsadun.org/esguince-de-tobillo/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drsadun.org/en/ankle-sprain/"/>
+  </url>
+  <url>
+    <loc>https://drsadun.org/en/ankle-sprain/</loc>
+    <lastmod>2026-11-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://drsadun.org/esguince-de-tobillo/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drsadun.org/en/ankle-sprain/"/>
+  </url>
+  <url>
+    <loc>https://drsadun.org/seguros-y-reembolso/</loc>
+    <lastmod>2026-11-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://drsadun.org/seguros-y-reembolso/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drsadun.org/en/insurance-and-reimbursement/"/>
+  </url>
+  <url>
+    <loc>https://drsadun.org/en/insurance-and-reimbursement/</loc>
+    <lastmod>2026-11-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://drsadun.org/seguros-y-reembolso/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drsadun.org/en/insurance-and-reimbursement/"/>
+  </url>
 </urlset>

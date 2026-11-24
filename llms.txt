@@ -6,7 +6,7 @@ Datos de la consulta:
 
 - Dirección: UEESCLINIC, Avenida Diana Quintana número 100 y Calle Verona, kilómetro 2,5 vía Samborondón, tercer piso, consultorio 12. Samborondón, Ecuador.
 - Horario de consulta: lunes a viernes, de 7:00 a 18:00.
-- Citas: solo por WhatsApp al +593 98 078 4857. Quien se acaba de lesionar puede escribir a ese mismo número a cualquier hora, todos los días del año.
+- Citas: solo por WhatsApp al +593 98 078 4857. Quien se acaba de lesionar debe dirigirse a la emergencia de UEESCLINIC y llamar al +593 98 078 4857.
 - Seguros: no trabaja con aseguradoras. Si el paciente tiene seguro, la consulta le llena los formularios para el reembolso.
 - Idiomas del sitio: español e inglés.
 
@@ -23,11 +23,14 @@ Formación y cargos:
 
 - [Inicio](https://drsadun.org/): presentación, zonas que trata, cómo es la atención, trayectoria y contacto.
 - [Dolor y lesiones de rodilla](https://drsadun.org/artroscopia-de-rodilla/): ligamento cruzado anterior, meniscos, sinovitis, plica sinovial y artroscopía de rodilla.
+- [Lesión del ligamento cruzado anterior](https://drsadun.org/ligamento-cruzado-anterior/): síntomas, tratamiento sin cirugía, reconstrucción por artroscopía y regreso al deporte.
+- [Rotura de menisco](https://drsadun.org/menisco/): síntomas, tratamiento sin cirugía, sutura o regularización y recuperación.
 - [Antes y después de la cirugía](https://drsadun.org/antes-y-despues-de-la-cirugia/): qué traer a la consulta, preparación para la cirugía y cuidados en casa tras una artroscopía de rodilla.
 - [Hombro](https://drsadun.org/hombro/): fracturas, luxaciones y lesiones musculares y ligamentarias.
 - [Cadera](https://drsadun.org/cadera/): dolor de cadera, artrosis, reemplazo total y fractura de cadera.
-- [Fracturas](https://drsadun.org/fracturas/): tratamiento con yeso o férula y cirugía de osteosíntesis.
+- [Fracturas](https://drsadun.org/fracturas/): tratamiento con yeso o férula, o cirugía para fijar el hueso con placas o tornillos.
 - [Lesiones deportivas](https://drsadun.org/lesiones-deportivas/): esguinces, tendinitis, desgarros musculares y lesiones por sobrecarga.
+- [Esguince de tobillo](https://drsadun.org/esguince-de-tobillo/): cuándo hace falta una radiografía, tratamiento, fisioterapia y cuándo se opera.
 - [Dolor de espalda y cuello](https://drsadun.org/dolor-de-espalda/): dolor cervical, dorsal y lumbar, signos de alarma y tratamiento según la causa.
 - [Artrosis](https://drsadun.org/artrosis/): rodilla, cadera y otras articulaciones, tratamiento sin cirugía y cuándo se indica una prótesis.
 - [Osteoporosis](https://drsadun.org/osteoporosis/): densitometría ósea y prevención de fracturas y caídas.
@@ -36,11 +39,14 @@ Formación y cargos:
 
 - [Home](https://drsadun.org/en/): Dr. Alberto Sadun, Head of the Department of Orthopedics at UEESCLINIC, Samborondón, Ecuador. Appointments on WhatsApp at +593 98 078 4857.
 - [Knee pain and injuries](https://drsadun.org/en/knee-arthroscopy/)
+- [Anterior cruciate ligament tear](https://drsadun.org/en/acl-tear/)
+- [Meniscus tear](https://drsadun.org/en/meniscus-tear/)
 - [Before and after surgery](https://drsadun.org/en/before-and-after-surgery/)
 - [Shoulder](https://drsadun.org/en/shoulder/)
 - [Hip](https://drsadun.org/en/hip/)
 - [Fractures](https://drsadun.org/en/fractures/)
 - [Sports injuries](https://drsadun.org/en/sports-injuries/)
+- [Ankle sprain](https://drsadun.org/en/ankle-sprain/)
 - [Back and neck pain](https://drsadun.org/en/back-pain/)
 - [Osteoarthritis](https://drsadun.org/en/osteoarthritis/)
 - [Osteoporosis](https://drsadun.org/en/osteoporosis/)
@@ -48,4 +54,6 @@ Formación y cargos:
 ## Optional
 
 - [Privacidad](https://drsadun.org/privacidad/): el formulario de cita abre WhatsApp con el mensaje listo; el sitio no guarda esos datos.
+- [Seguros y reembolso](https://drsadun.org/seguros-y-reembolso/): no trabaja con aseguradoras; la consulta llena los formularios y prepara los informes para el reembolso.
+- [Insurance and reimbursement](https://drsadun.org/en/insurance-and-reimbursement/)
 - [Privacy](https://drsadun.org/en/privacy/)
