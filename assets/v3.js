@@ -86,10 +86,10 @@
   }
 
   /* botón flotante: aparece al bajar y se oculta en contacto y en el pie */
-  var fl=document.querySelector('.wa-float');
+  var fls=document.querySelectorAll('.wa-float,.call-float'),fl=fls[0];
   if(fl){
     var hide=document.querySelectorAll('#contacto,#contact,.site-footer'),inHide=new Set();
-    function upd(){fl.classList.toggle('show',window.scrollY>window.innerHeight*.6&&inHide.size===0)}
+    function upd(){var on=window.scrollY>window.innerHeight*.6&&inHide.size===0;fls.forEach(function(x){x.classList.toggle('show',on)})}
     if('IntersectionObserver' in window){var ho=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)inHide.add(e.target);else inHide.delete(e.target)});upd()});hide.forEach(function(h){ho.observe(h)})}
     upd();window.addEventListener('scroll',upd,{passive:true});
   }
