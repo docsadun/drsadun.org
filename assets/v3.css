@@ -23,6 +23,7 @@
   --black:#000;
   --urgent:#C8102E;
   --urgent-soft:#FBEFF1;
+  --urgent-line:#F0C9CF;
   --wa:#25D366;         /* verde WhatsApp */
   --wa-d:#1EBE5D;
   --wa-ink:#06301B;
@@ -63,7 +64,6 @@ button,input,select,textarea{font:inherit;color:inherit}
 .wrap{max-width:var(--wrap);margin:0 auto;padding:0 var(--pad)}
 .skip{position:absolute;left:12px;top:-60px;z-index:100;padding:10px 16px;border-radius:var(--r-sm);background:var(--ink);color:var(--on-dark);text-decoration:none;font-weight:650}
 .skip:focus{top:12px}
-.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 
 /* íconos */
 .wa{width:20px;height:20px;flex:none}
@@ -73,7 +73,7 @@ button,input,select,textarea{font:inherit;color:inherit}
 /* botones */
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:0 22px;border-radius:999px;border:1.5px solid transparent;font-weight:700;font-size:.9688rem;line-height:1.2;text-decoration:none;cursor:pointer;transition:background-color .2s var(--ease),border-color .2s var(--ease),color .2s var(--ease),transform .16s var(--ease)}
 .btn:active{transform:scale(.97)}
-.btn-wa{background:var(--wa);color:var(--wa-ink);box-shadow:0 6px 18px rgba(37,211,102,.22)}
+.btn-wa{background:var(--wa);color:var(--wa-ink);box-shadow:0 4px 12px rgba(12,31,74,.14)}
 .btn-wa:hover{background:var(--wa-d)}
 .btn-line{background:var(--card);border-color:var(--line);color:var(--ink)}
 .btn-line:hover{border-color:var(--ink)}
@@ -204,7 +204,6 @@ button,input,select,textarea{font:inherit;color:inherit}
 .sec{padding:clamp(64px,9vw,112px) 0}
 .sec-tint{background:var(--ice)}
 .sec-card{background:var(--card)}
-.sec-line{border-top:1px solid var(--line-2)}
 .sec-head{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:16px 32px;margin-bottom:clamp(28px,4vw,44px)}
 .sec-head>div{max-width:640px}
 .sec h2,.doc h2{font-family:var(--serif);font-weight:700;font-size:clamp(2rem,3.6vw,2.75rem);line-height:1.1;letter-spacing:-.015em;color:var(--ink)}
@@ -464,7 +463,7 @@ button,input,select,textarea{font:inherit;color:inherit}
 .doc-main ul,.doc-main ol{padding-left:1.3em}
 .doc-main li+li{margin-top:8px}
 .doc-main section a:not(.btn){color:var(--scrub-d);font-weight:600}
-.doc-main .box-alert{margin-top:36px;padding:26px 28px;border:1px solid #F0C9CF;border-left-width:1px;border-radius:var(--r-lg);background:var(--urgent-soft)}
+.doc-main .box-alert{margin-top:36px;padding:26px 28px;border:1px solid var(--urgent-line);border-left-width:1px;border-radius:var(--r-lg);background:var(--urgent-soft)}
 .doc-main .box-alert+section{border-top:0}
 .doc-main .box-alert h2{color:var(--urgent);font-size:clamp(1.5rem,2.6vw,1.875rem)}
 .doc-main .box-contact{margin-top:36px;padding:26px 28px;border:1px solid var(--ice-2);border-radius:var(--r-lg);background:var(--ice)}
