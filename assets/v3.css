@@ -569,3 +569,4 @@ html:has(.lightbox[open]){overflow:hidden}
     details[open]::details-content{block-size:auto}
   }
 }
+.form select::picker-icon{display:none}
