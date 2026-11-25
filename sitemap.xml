@@ -180,4 +180,52 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://drsadun.org/seguros-y-reembolso/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://drsadun.org/en/insurance-and-reimbursement/"/>
   </url>
+  <url>
+    <loc>https://drsadun.org/codo/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://drsadun.org/codo/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drsadun.org/en/elbow/"/>
+  </url>
+  <url>
+    <loc>https://drsadun.org/en/elbow/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://drsadun.org/codo/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drsadun.org/en/elbow/"/>
+  </url>
+  <url>
+    <loc>https://drsadun.org/mano-y-muneca/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://drsadun.org/mano-y-muneca/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drsadun.org/en/hand-and-wrist/"/>
+  </url>
+  <url>
+    <loc>https://drsadun.org/en/hand-and-wrist/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://drsadun.org/mano-y-muneca/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drsadun.org/en/hand-and-wrist/"/>
+  </url>
+  <url>
+    <loc>https://drsadun.org/torax/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://drsadun.org/torax/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drsadun.org/en/chest/"/>
+  </url>
+  <url>
+    <loc>https://drsadun.org/en/chest/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://drsadun.org/torax/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drsadun.org/en/chest/"/>
+  </url>
+  <url>
+    <loc>https://drsadun.org/tobillo-y-pie/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://drsadun.org/tobillo-y-pie/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drsadun.org/en/ankle-and-foot/"/>
+  </url>
+  <url>
+    <loc>https://drsadun.org/en/ankle-and-foot/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://drsadun.org/tobillo-y-pie/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drsadun.org/en/ankle-and-foot/"/>
+  </url>
 </urlset>

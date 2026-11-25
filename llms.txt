@@ -27,9 +27,13 @@ Formación y cargos:
 - [Rotura de menisco](https://drsadun.org/menisco/): síntomas, tratamiento sin cirugía, sutura o regularización y recuperación.
 - [Antes y después de la cirugía](https://drsadun.org/antes-y-despues-de-la-cirugia/): qué traer a la consulta, preparación para la cirugía y cuidados en casa tras una artroscopía de rodilla.
 - [Hombro](https://drsadun.org/hombro/): fracturas, luxaciones y lesiones musculares y ligamentarias.
+- [Codo](https://drsadun.org/codo/): codo de tenista y de golfista, bursitis, fracturas y luxaciones.
+- [Mano y muñeca](https://drsadun.org/mano-y-muneca/): fractura de muñeca, túnel carpiano, dedo en gatillo y tendinitis de De Quervain.
+- [Tórax y costillas](https://drsadun.org/torax/): golpes en el tórax, fracturas de costillas y señales de alarma.
 - [Cadera](https://drsadun.org/cadera/): dolor de cadera, artrosis, reemplazo total y fractura de cadera.
 - [Fracturas](https://drsadun.org/fracturas/): tratamiento con yeso o férula, o cirugía para fijar el hueso con placas o tornillos.
 - [Lesiones deportivas](https://drsadun.org/lesiones-deportivas/): esguinces, tendinitis, desgarros musculares y lesiones por sobrecarga.
+- [Tobillo y pie](https://drsadun.org/tobillo-y-pie/): torceduras, fracturas, tendón de Aquiles y dolor en el talón.
 - [Esguince de tobillo](https://drsadun.org/esguince-de-tobillo/): cuándo hace falta una radiografía, tratamiento, fisioterapia y cuándo se opera.
 - [Dolor de espalda y cuello](https://drsadun.org/dolor-de-espalda/): dolor cervical, dorsal y lumbar, signos de alarma y tratamiento según la causa.
 - [Artrosis](https://drsadun.org/artrosis/): rodilla, cadera y otras articulaciones, tratamiento sin cirugía y cuándo se indica una prótesis.
@@ -43,9 +47,13 @@ Formación y cargos:
 - [Meniscus tear](https://drsadun.org/en/meniscus-tear/)
 - [Before and after surgery](https://drsadun.org/en/before-and-after-surgery/)
 - [Shoulder](https://drsadun.org/en/shoulder/)
+- [Elbow](https://drsadun.org/en/elbow/)
+- [Hand and wrist](https://drsadun.org/en/hand-and-wrist/)
+- [Chest and ribs](https://drsadun.org/en/chest/)
 - [Hip](https://drsadun.org/en/hip/)
 - [Fractures](https://drsadun.org/en/fractures/)
 - [Sports injuries](https://drsadun.org/en/sports-injuries/)
+- [Ankle and foot](https://drsadun.org/en/ankle-and-foot/)
 - [Ankle sprain](https://drsadun.org/en/ankle-sprain/)
 - [Back and neck pain](https://drsadun.org/en/back-pain/)
 - [Osteoarthritis](https://drsadun.org/en/osteoarthritis/)
