@@ -13,10 +13,14 @@
 
   /* cajón móvil */
   var burger=document.getElementById('burger'),drawer=document.getElementById('drawer');
-  function drawerSet(o){if(!burger)return;burger.setAttribute('aria-expanded',o?'true':'false');burger.setAttribute('aria-label',o?(EN?'Close menu':'Cerrar menú'):(EN?'Open menu':'Abrir menú'));drawer.classList.toggle('on',o)}
+  var inertEls=document.querySelectorAll('main,.site-footer');
+  function drawerSet(o){if(!burger)return;inertEls.forEach(function(x){x.inert=!!o});burger.setAttribute('aria-expanded',o?'true':'false');burger.setAttribute('aria-label',o?(EN?'Close menu':'Cerrar menú'):(EN?'Open menu':'Abrir menú'));drawer.classList.toggle('on',o)}
   if(burger){
     burger.addEventListener('click',function(){drawerSet(burger.getAttribute('aria-expanded')!=='true')});
     drawer.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){drawerSet(false)})});
+    var dsb=drawer.querySelector('.drawer-spec-btn');
+    if(dsb){dsb.addEventListener('click',function(){var o=dsb.getAttribute('aria-expanded')!=='true';dsb.setAttribute('aria-expanded',o?'true':'false');document.getElementById(dsb.getAttribute('aria-controls')).hidden=!o})}
+    window.matchMedia('(min-width:1181px)').addEventListener('change',function(e){if(e.matches)drawerSet(false)});
   }
   document.addEventListener('keydown',function(e){if(e.key==='Escape'){if(trig&&trig.getAttribute('aria-expanded')==='true'){megaSet(false);trig.focus()}if(burger&&burger.getAttribute('aria-expanded')==='true'){drawerSet(false);burger.focus()}}});
 
@@ -36,13 +40,21 @@
   });
 
   /* pestañas de cursos y congresos */
-  var tabs=document.querySelectorAll('.tabs button');
-  tabs.forEach(function(b){
-    b.addEventListener('click',function(){
-      tabs.forEach(function(x){x.setAttribute('aria-selected','false')});
-      document.querySelectorAll('.panel').forEach(function(p){p.classList.remove('on')});
-      b.setAttribute('aria-selected','true');document.getElementById(b.dataset.tab).classList.add('on');
-    });
+  var tabs=[].slice.call(document.querySelectorAll('.tabs [role="tab"]'));
+  var until=('onbeforematch' in document.body);
+  function tabOn(b,focus){
+    tabs.forEach(function(x){var on=x===b,p=document.getElementById(x.getAttribute('aria-controls'));x.setAttribute('aria-selected',on?'true':'false');x.tabIndex=on?0:-1;
+      if(on){p.removeAttribute('hidden')}else if(until){p.setAttribute('hidden','until-found')}else{p.hidden=true}});
+    if(focus)b.focus();
+  }
+  tabs.forEach(function(b,i){
+    b.addEventListener('click',function(){tabOn(b)});
+    b.addEventListener('keydown',function(e){var k=e.key,j=null;
+      if(k==='ArrowRight')j=(i+1)%tabs.length;else if(k==='ArrowLeft')j=(i-1+tabs.length)%tabs.length;else if(k==='Home')j=0;else if(k==='End')j=tabs.length-1;
+      if(j!==null){e.preventDefault();tabOn(tabs[j],true)}});
+    var p=document.getElementById(b.getAttribute('aria-controls'));
+    if(until&&p.hidden)p.setAttribute('hidden','until-found');
+    p.addEventListener('beforematch',function(){tabOn(b)});
   });
 
   /* fotos ampliadas */
@@ -52,11 +64,10 @@
     document.querySelectorAll('.shot img').forEach(function(img){
       var f=img.parentNode,cap=f.querySelector('figcaption'),txt=cap?cap.textContent:img.alt;
       var o=document.createElement('button');o.type='button';o.className='shot-open';o.setAttribute('aria-label',(EN?'Enlarge photo: ':'Ampliar foto: ')+txt);f.appendChild(o);
-      o.addEventListener('click',function(){last=o;lbi.src=img.currentSrc||img.src;lbi.alt=txt;lbi.width=img.naturalWidth||+img.getAttribute('width');lbi.height=img.naturalHeight||+img.getAttribute('height');lb.classList.add('on');lb.querySelector('button').focus()});
+      o.addEventListener('click',function(){last=o;lbi.src=img.currentSrc||img.src;lbi.alt=txt;lbi.width=img.naturalWidth||+img.getAttribute('width');lbi.height=img.naturalHeight||+img.getAttribute('height');if(typeof lb.showModal==='function'){if(!lb.open)lb.showModal()}else{lb.setAttribute('open','')}lb.querySelector('button').focus()});
     });
-    function close(){lb.classList.remove('on');if(last)last.focus()}
+    function close(){if(typeof lb.close==='function'){if(lb.open)lb.close()}else{lb.removeAttribute('open');if(last)last.focus()}}
     lb.addEventListener('click',close);
-    document.addEventListener('keydown',function(e){if(e.key==='Escape'&&lb.classList.contains('on'))close()});
   }
 
   /* formulario de cita: arma el mensaje de WhatsApp, no guarda nada */
