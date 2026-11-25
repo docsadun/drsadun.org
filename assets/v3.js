@@ -109,6 +109,7 @@
     function upd(){var on=inHide.size===0;fls.forEach(function(x){x.classList.toggle('show',on)})}
     if('IntersectionObserver' in window){var ho=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)inHide.add(e.target);else inHide.delete(e.target)});upd()});hide.forEach(function(h){ho.observe(h)})}
     upd();
+    var wf=document.querySelector('.wa-float'),mini=function(){wf&&wf.classList.toggle('mini',window.scrollY>window.innerHeight*.5)};mini();window.addEventListener('scroll',mini,{passive:true});
   }
 
   /* índice lateral: marca la sección que se está leyendo */
