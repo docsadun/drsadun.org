@@ -64,7 +64,8 @@ html{-webkit-text-size-adjust:100%;scroll-padding-top:calc(var(--head-h) + 16px)
 body{margin:0;background:var(--bg);color:var(--text);font:400 1.0625rem/1.65 var(--sans);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
 img,video,svg{display:block;max-width:100%;height:auto}
 a{color:inherit;text-underline-offset:3px}
-p{margin:0;text-wrap:pretty}
+p,li,figcaption,dd{text-wrap:pretty}
+p{margin:0}
 h1,h2,h3,h4{margin:0;text-wrap:balance}
 ul,ol{margin:0;padding:0}
 button,input,select,textarea{font:inherit;color:inherit}
@@ -382,7 +383,7 @@ html:has(.lightbox[open]){overflow:hidden}
 .qs details[open]{border-color:var(--sky)}
 .qs summary{display:flex;justify-content:space-between;align-items:center;gap:16px;min-height:60px;padding:12px 20px;cursor:pointer;list-style:none;font-weight:700;font-size:1.0313rem;color:var(--fg);line-height:1.4}
 .qs summary::-webkit-details-marker{display:none}
-.qs details>*:not(summary){padding:0 20px;font-size:1rem;line-height:1.7;color:var(--text-2);max-width:68ch}
+.qs details>*:not(summary){padding:0 20px;font-size:1rem;line-height:1.7;color:var(--text-2);max-width:calc(34em + 40px)}
 .qs details>*:last-child{padding-bottom:20px}
 .qs details>p+p,.qs details>ul+p{margin-top:10px}
 .qs ul{list-style:disc;padding-left:40px!important}
@@ -591,6 +592,8 @@ html:has(.lightbox[open]){overflow:hidden}
 .ph-byline{margin-top:10px;font-size:.9375rem;color:var(--muted)}
 .ph-byline a{color:var(--fg);font-weight:600;text-decoration-color:color-mix(in srgb,currentColor 35%,transparent);text-underline-offset:3px}
 .reviews .rev-link{align-self:center;margin-left:6px;font-size:.9375rem;font-weight:600;color:var(--accent-d);text-underline-offset:3px}
-@media (prefers-color-scheme:dark){.zone-feature{background:linear-gradient(135deg,#1D4291 0%,#163377 100%);border:1px solid #3A66BD;box-shadow:0 10px 40px rgba(29,66,145,.35)}}
+@media (prefers-color-scheme:dark){.zone-feature{background:linear-gradient(135deg,color-mix(in srgb,var(--accent) 24%,var(--navy-2)) 0%,var(--navy-2) 100%);border:1px solid color-mix(in srgb,var(--accent) 45%,transparent);box-shadow:var(--sh-lg)}}
 .wa-float.mini{width:52px;padding:0;justify-content:center}
 .wa-float.mini span{display:none}
+.doc-main p:not(.qs p),.doc-main li,.ph-byline,.ph-lead,.prose p{max-width:34em}
+.form ::placeholder{color:var(--muted);opacity:1}
