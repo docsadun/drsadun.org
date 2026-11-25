@@ -549,3 +549,4 @@ button,input,select,textarea{font:inherit;color:inherit}
 
 .form select{appearance:none;-webkit-appearance:none;padding-right:44px;background-color:var(--bg);background-image:linear-gradient(45deg,transparent 50%,var(--muted) 50%),linear-gradient(135deg,var(--muted) 50%,transparent 50%);background-position:calc(100% - 21px) 50%,calc(100% - 15px) 50%;background-size:6px 6px,6px 6px;background-repeat:no-repeat;text-overflow:ellipsis}
 .drawer-zones .dz-guide{color:var(--accent);padding:2px}
+.gword{font-weight:800;letter-spacing:-.01em}.gword .g1{color:#4285F4}.gword .g2{color:#EA4335}.gword .g3{color:#FBBC05}.gword .g4{color:#34A853}
