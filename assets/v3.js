@@ -27,13 +27,16 @@
   /* videos: con ahorro de datos, conexión lenta o menos movimiento se queda la foto */
   var nc=navigator.connection,lite=!!(nc&&(nc.saveData||/2g|3g/.test(nc.effectiveType||'')));
   var lv=document.querySelectorAll('video.lazy-v');
-  function wake(v){if(v.dataset.src){v.src=v.dataset.src;v.removeAttribute('data-src');if(red){v.controls=true}else{var p=v.play();if(p&&p.catch)p.catch(function(){})}}}
+  function poster(v){if(v.dataset.poster){v.poster=v.dataset.poster;v.removeAttribute('data-poster')}}
+  var lp=document.querySelectorAll('video[data-poster]');
+  if('IntersectionObserver' in window){var po=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){poster(e.target);po.unobserve(e.target)}})},{rootMargin:'600px'});lp.forEach(function(v){po.observe(v)})}else{lp.forEach(poster)}
+  function wake(v){poster(v);if(v.dataset.src){v.src=v.dataset.src;v.removeAttribute('data-src');if(red){v.controls=true}else{var p=v.play();if(p&&p.catch)p.catch(function(){})}}}
   if(lite||red){}else if('IntersectionObserver' in window){var vo=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){wake(e.target);vo.unobserve(e.target)}})},{rootMargin:'200px'});lv.forEach(function(v){vo.observe(v)})}else{lv.forEach(wake)}
-  var PAUSE='<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M7 5h3.5v14H7zM13.5 5H17v14h-3.5z"/></svg>';
-  var PLAY='<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M8 5.5v13l11-6.5z"/></svg>';
+  var NS='http://www.w3.org/2000/svg',PAUSE='M7 5h3.5v14H7zM13.5 5H17v14h-3.5z',PLAY='M8 5.5v13l11-6.5z';
+  function ico(d){var g=document.createElementNS(NS,'svg');g.setAttribute('viewBox','0 0 24 24');g.setAttribute('aria-hidden','true');var q=document.createElementNS(NS,'path');q.setAttribute('fill','currentColor');q.setAttribute('d',d);g.appendChild(q);return g}
   lv.forEach(function(v){
     var b=document.createElement('button');b.type='button';b.className='vid-btn';
-    function sync(){var on=!v.paused;b.innerHTML=on?PAUSE:PLAY;b.setAttribute('aria-label',on?(EN?'Pause video':'Pausar video'):(EN?'Play video':'Reproducir video'))}
+    function sync(){var on=!v.paused;b.replaceChildren(ico(on?PAUSE:PLAY));b.setAttribute('aria-label',on?(EN?'Pause video':'Pausar video'):(EN?'Play video':'Reproducir video'))}
     b.addEventListener('click',function(e){e.stopPropagation();if(v.dataset.src)wake(v);if(v.paused){var p=v.play();if(p&&p.catch)p.catch(function(){})}else{v.pause()}});
     v.addEventListener('play',sync);v.addEventListener('pause',sync);
     v.parentNode.appendChild(b);sync();
@@ -62,9 +65,9 @@
   if(lb){
     var lbi=lb.querySelector('img'),last=null;
     document.querySelectorAll('.shot img').forEach(function(img){
-      var f=img.parentNode,cap=f.querySelector('figcaption'),txt=cap?cap.textContent:img.alt;
+      var f=img.closest('figure'),cap=f.querySelector('figcaption'),txt=cap?cap.textContent:img.alt;
       var o=document.createElement('button');o.type='button';o.className='shot-open';o.setAttribute('aria-label',(EN?'Enlarge photo: ':'Ampliar foto: ')+txt);f.appendChild(o);
-      o.addEventListener('click',function(){last=o;lbi.src=img.currentSrc||img.src;lbi.alt=txt;lbi.width=img.naturalWidth||+img.getAttribute('width');lbi.height=img.naturalHeight||+img.getAttribute('height');if(typeof lb.showModal==='function'){if(!lb.open)lb.showModal()}else{lb.setAttribute('open','')}lb.querySelector('button').focus()});
+      o.addEventListener('click',function(){last=o;var so=f.querySelector('source'),big=so?so.getAttribute('srcset').split(',').pop().trim().split(' ')[0]:'';lbi.src=big||img.currentSrc||img.src;lbi.alt=txt;lbi.width=img.naturalWidth||+img.getAttribute('width');lbi.height=img.naturalHeight||+img.getAttribute('height');if(typeof lb.showModal==='function'){if(!lb.open)lb.showModal()}else{lb.setAttribute('open','')}lb.querySelector('button').focus()});
     });
     function close(){if(typeof lb.close==='function'){if(lb.open)lb.close()}else{lb.removeAttribute('open');if(last)last.focus()}}
     lb.addEventListener('click',close);
@@ -74,12 +77,15 @@
   var form=document.getElementById('form');
   if(form){
     var MSG={'f-name':EN?'Please write your full name.':'Escriba su nombre completo.','f-motivo':EN?'Please choose the reason for your visit.':'Elija el motivo de consulta.'};
+    function err(el,msg){var p=document.getElementById(el.id+'-err');el.setAttribute('aria-invalid',msg?'true':'false');if(p){p.textContent=msg||'';p.hidden=!msg}}
     Object.keys(MSG).forEach(function(id){var el=document.getElementById(id);if(!el)return;
-      el.addEventListener('invalid',function(){el.setCustomValidity(MSG[id])});
-      ['input','change'].forEach(function(ev){el.addEventListener(ev,function(){el.setCustomValidity('')})});
+      el.setAttribute('aria-invalid','false');
+      ['input','change'].forEach(function(ev){el.addEventListener(ev,function(){if(el.checkValidity())err(el,'')})});
     });
     form.addEventListener('submit',function(e){
       e.preventDefault();
+      var bad=null;Object.keys(MSG).forEach(function(id){var el=document.getElementById(id);if(el&&!el.checkValidity()){err(el,MSG[id]);bad=bad||el}});
+      if(bad){bad.focus();return}
       var n=document.getElementById('f-name').value.trim(),m=document.getElementById('f-motivo').value,t=document.getElementById('f-msg').value.trim();
       var txt=EN
         ? 'Hello Dr. Sadun, my name is '+n+'. I would like to request an appointment. Reason: '+m+'.'+(t?' '+t:'')+' (Writing from drsadun.org)'
