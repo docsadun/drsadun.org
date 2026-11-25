@@ -392,6 +392,8 @@ button,input,select,textarea{font:inherit;color:inherit}
 .facts dd a:hover{text-decoration-color:var(--fg)}
 .facts .dd-sub{display:block;margin-top:4px;font-weight:500;font-size:.9063rem;color:var(--muted)}
 .facts .wa-link{color:var(--wa-link);font-weight:750;text-decoration-color:rgba(37,211,102,.5)}
+.clinic > p{margin-top:16px;font-size:1.0625rem;line-height:1.75;color:var(--text-2)}
+.clinic > p a{color:var(--accent-d);font-weight:600}
 .map-frame{position:relative;margin-top:12px;border-radius:var(--r-lg);overflow:hidden;aspect-ratio:16/10;background:var(--tint);border:1px solid var(--border-2)}
 .map-frame iframe{position:relative;z-index:1;width:100%;height:100%;border:0;display:block}
 .map-alt{position:absolute;inset:0;display:grid;place-items:center;padding:24px;text-align:center;color:var(--fg);font-weight:700;text-underline-offset:4px}
@@ -424,7 +426,6 @@ button,input,select,textarea{font:inherit;color:inherit}
 .foot-act{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
 .foot-map{display:inline-flex;align-items:center;min-height:44px;margin-top:4px;color:rgba(255,255,255,.86)}
 .foot-map:hover{color:var(--on-dark)}
-.foot-reg{margin-top:8px;font-size:.8438rem;color:rgba(255,255,255,.74)}
 .foot-h{margin-bottom:8px;font-size:.8438rem;font-weight:700;letter-spacing:.02em;color:var(--sky)}
 .foot-links{list-style:none}
 .foot-links a{display:inline-flex;align-items:center;min-height:44px;color:rgba(255,255,255,.86);text-decoration:none}
