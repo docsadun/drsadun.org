@@ -77,7 +77,7 @@
   var form=document.getElementById('form');
   if(form){
     var MSG={'f-name':EN?'Please write your full name.':'Escriba su nombre completo.','f-motivo':EN?'Please choose the reason for your visit.':'Elija el motivo de consulta.'};
-    function err(el,msg){var p=document.getElementById(el.id+'-err');el.setAttribute('aria-invalid',msg?'true':'false');if(p){p.textContent=msg||'';p.hidden=!msg}}
+    function err(el,msg){var p=document.getElementById(el.id+'-err');el.setAttribute('aria-invalid',msg?'true':'false');if(msg){el.setAttribute('aria-describedby',el.id+'-err')}else{el.removeAttribute('aria-describedby')}if(p){p.textContent=msg||'';p.hidden=!msg}}
     Object.keys(MSG).forEach(function(id){var el=document.getElementById(id);if(!el)return;
       el.setAttribute('aria-invalid','false');
       ['input','change'].forEach(function(ev){el.addEventListener(ev,function(){if(el.checkValidity())err(el,'')})});
